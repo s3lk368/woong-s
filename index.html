@@ -3,41 +3,62 @@
 <head>
   <title> Woong's diary</title>
   <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154714288-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <style>
+   body {
+     margin:0;
+   }
+   a {
+    color:black;
+    text-decoration: none;
+   }
+   h1 {
+     font-size:45px;
+     text-align: center;
+     border-bottom:1px solid gray;
+     padding:20px;
+     margin:0px;
+   }
+   #grid{
+     display: grid;
+     grid-template-columns: 230px 1fr;
+   }
+   #grid ol {
+     border-right:1px solid gray;
+     width:120px;
+     padding:40px;
+     margin:0;
+   }
+   #grid #article{
 
-  gtag('config', 'UA-154714288-1');
-</script>
-
+   }
+  </style>
 </head>
 <body>
- <h1><a href="index.html">여행일지</a></h1>
- <ol>
-   <li><a href="1.html">파리</a></li>
-   <li><a href="2.html">스트라스부르</a></li>
-   <li><a href="3.html">샤모니몽블랑</a></li>
-   <li><a href="4.html">니스</a></li>
-   <li><a href="5.html">마르세유</a></li>
-   <li><a href="6.html">아비뇽</a></li>
-   <li><a href="7.html">툴루즈</a></li>
-   <li><a href="8.html">보르도</a></li>
-   <li><a href="9.html">벨기에</a></li>
-   <li><a href="10.html">파리</a></li>
- </ol>
- <h2>끄적임</h2>
- <img src="eiffel.jpg" width="50%">
- <p>
-   <a href="https://www.naver.com/" target="_blank" title="GREEN ENGINE">
+ <h1><a href="index.html" style="color:brown">여행일지</a></h1>
+ <div id="grid">
+  <ol>
+    <li><a href="1.html">파리</a></li>
+    <li><a href="2.html">스트라스부르</a></li>
+    <li><a href="3.html">샤모니몽블랑</a></li>
+    <li><a href="4.html">니스</a></li>
+    <li><a href="5.html">마르세유</a></li>
+    <li><a href="6.html">아비뇽</a></li>
+    <li><a href="7.html">툴루즈</a></li>
+    <li><a href="8.html">보르도</a></li>
+    <li><a href="9.html">벨기에</a></li>
+    <li><a href="10.html">파리</a></li>
+  </ol>
+  <div id="article">
+    <h2>끄적임</h2>
+    <p>
+      <a href="https://www.naver.com/" target="_blank" title="GREEN ENGINE">
      :))
-   </a>
-  <strong>
-    에펠탑은 <u>꿈이고 환상이다.</u>
-  </strong>
-</p>
-  분명 봤지만 흐릿하고 어렴풋이 스쳐지나간 흔적 같다.
+      </a>
+       에펠탑은 꿈이고 환상이다. 분명 봤지만 흐릿하고 어렴풋이 스쳐지나간 흔적 같다.
+    <p>
+     <img src="eiffel.jpg" width="30%">
+    </p>
+  </div>
+ </div>
 </body>
 </html>
