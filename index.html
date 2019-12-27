@@ -4,38 +4,7 @@
   <title> Woong's diary</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script>
-    function LinksSetColor(color){
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-       alist[i].style.color = color;
-       i = i + 1;
-      }
-    }
-    function BodySetColor(color){
-      document.querySelector('body').style.color = color;
-    }
-    function BodySetBackgroudSetColor(color){
-      document.querySelector('body').style.backgroundColor = color;
-    }
-    function nightDayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value === 'night'){
-      BodySetBackgroudSetColor('black');
-      BodySetColor('white');
-      self.value = 'day' ;
-
-       LinksSetColor('white');
-     } else {
-       BodySetBackgroudSetColor('white')
-       BodySetColor('black');
-       self.value = 'night' ;
-
-       LinksSetColor('black');
-     }
-   }
-  </script>
+  <script src="colors.js"></script>
 </head>
 <body>
  <h1><a href="index.html" style="color:brown">여행일지</a></h1>
@@ -69,12 +38,5 @@
     </p>
   </div>
  </div>
-
-
-
-
-
-
-
 </body>
 </html>
